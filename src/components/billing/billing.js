@@ -44,6 +44,18 @@ function Billing(props) {
         details[i].savingsPrice = save;
       }
     }
+    if (item.name === "Butter") {
+      if (item.count % 3 === 0) {
+        const save = (item.count / 3) * item.price;
+        details[i].savingsPrice = save;
+      } else if (item.count % 3 === 1) {
+        const save = ((item.count - 1) / 3) * item.price;
+        details[i].savingsPrice = save;
+      } else {
+        const save = ((item.count - 2) / 3) * item.price;
+        details[i].savingsPrice = save;
+      }
+    }
   }
 
   //gives total savings by adding saving of each items
