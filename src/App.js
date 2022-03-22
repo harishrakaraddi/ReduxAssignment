@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import React, { useEffect, useState } from "react";
 import Button from "@mui/material/Button";
@@ -57,35 +56,8 @@ const initialState = {
 };
 
 function App() {
-  // array having group of objects with product details
-
   const dispatch = useDispatch();
-  useState(() => {
-    dispatch({ type: "INITIALIZE", payload: initialState });
-  }, []);
-  //const [items] = useState(useSelector((state) => state.items));
-
-  //let [details, setDetails] = useState(items);
-  // let [count, setCount] = useState(0);
-
-  // function written to increment the quantity of products
-  // function increment(i) {
-  //   details[i].count = details[i].count + 1;
-  //   const action = {
-  //     type: "INCREMENT",
-  //     payload: { details },
-  //   };
-  //   dispatch(action);
-  // }
-
-  //function written to decrement the quantity of products
-  // function decrement(i) {
-  //   if (details[i].count) {
-  //     details[i].count = details[i].count - 1;
-  //     setDetails(details);
-  //     setCount((count = count + 1));
-  //   }
-  // }
+  dispatch({ type: "INITIALIZE", payload: initialState });
 
   return (
     <div className="d-flex justify-content-around">
@@ -95,10 +67,6 @@ function App() {
       <Routes>
         <Route path="/billing" element={<Billing />} />
       </Routes>
-
-      {/* <Link to="/billing">Billing</Link> */}
-
-      {/* <Header /> */}
     </div>
   );
 }
