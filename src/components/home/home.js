@@ -72,7 +72,7 @@ const Home = () => {
                         variant="outlined"
                         style={{ minWidth: "20px" }}
                         onClick={() => {
-                          dispatch({ type: "INCREMENT", payload: { i } });
+                          dispatch({ type: "INCREMENT", payload: i });
                         }}
                       >
                         +
@@ -86,7 +86,7 @@ const Home = () => {
                         onClick={() => {
                           dispatch({
                             type: "DECREMENT",
-                            payload: { i },
+                            payload: i,
                           });
                         }}
                       >
