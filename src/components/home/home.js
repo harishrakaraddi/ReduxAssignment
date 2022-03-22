@@ -64,9 +64,6 @@ const Home = () => {
                     &#163;{item.price}
                   </Typography>
                   <div className="mt-4">
-                    {/* <Button variant="contained" type="button">
-                    Add
-                  </Button> */}
                     <div className="d-flex" style={{ marginTop: "10px" }}>
                       <Button
                         variant="outlined"
@@ -96,31 +93,11 @@ const Home = () => {
                   </div>
                 </CardContent>
               </Box>
-              {/* <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvGJDi8BuWwr_vXPGPVv0WG2TRGcyYAaLsgg&usqp=CAU" /> */}
-              {/* {item.imgUrl} */}
-              {/* <img src={item.img} /> */}
-              {/* //img.src = "images/" + songs.imageName + ".jpg"; */}
               <img src={item.img} alt="logo" />
-              {/* <CardMedia
-          component="img"
-          sx={{ width: 151 }}
-          image="/src/utils/images/milk.png"
-          alt="Live from space album cover"
-        /> */}
             </Card>
           );
         })}
       </div>
-      {/* <div>
-        <Button
-          type="button"
-          variant="outlined"
-          style={{ marginTop: "10px" }}
-          onClick={() => navigate("/Billing")}
-        >
-          View Billing
-        </Button>
-      </div> */}
     </div>
   );
 };
